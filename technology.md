@@ -9,4 +9,4 @@ PostgreSQL through PGAdmin is the database we intend to use, and we will integra
 SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is Logistical Regression. We will also incorportate Random Forest to make predictions using our testing data. We we also use train_test_split model to generate the datasets. 
 
 ## Dashboard
-In addition to using a SQLAlchemy, we will also integrate Taabluea for a fully functioning and interactive dashboard. It will be displayed overall through a story. 
+In addition to using a SQLAlchemy, we will also integrate Tabluea for a fully functioning and interactive dashboard. Our anlaysis will be displayed overall through a story with charts and graphs. 
