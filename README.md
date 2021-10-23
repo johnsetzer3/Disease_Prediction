@@ -24,10 +24,10 @@ X: The member in the X role will decide which technologies will be used for each
 Morgan documented the technologies that all team members agreed to.
 
 ## Topic Selected: Disease Prediction using Machine Learning 
-### This topic uses data that has 132 parameters to help predict 42 different types of diseases. 
+This topic uses data that has 132 parameters to help predict 42 different types of diseases. 
 
 ## Reason Why the Topic Was Selected: 
-### The dataset provided is in a testing and training file, so this will give us to chance to show the skills we learned from Modules 17, 18, and 19 including logistical regression, K-means, hierarchical clustering, Tensorflow and Random Forest.
+The dataset provided is in a testing and training file, so this will give us to chance to show the skills we learned from Modules 17, 18, and 19 including logistical regression, K-means, hierarchical clustering, Tensorflow and Random Forest.
 
 ## Description of the Source of Data: 
 The data we used is two csv file downloaded from Kaggle. 
