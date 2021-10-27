@@ -12,7 +12,7 @@
 Our team will transition roles during the different segments of the project. We have five group members so we will have multiple people within one role.
 
 Square: The Team member in the square role will be responsible for the repository. 
-John will be the team member responsible for the GitHub repository. He created our repository and is handling merging branches to the main branch..
+John will be the team member responsible for the GitHub repository. He created our repository and is handling merging branches to the main branch.
 
 Triangle: The member in the triangle role will create a mockup of a machine learning model. 
 Frank created a diagram that shows how Code Blue's machine learning model will work concurrently with the rest of the project steps.
@@ -37,8 +37,6 @@ The source of the data from the author is not disclosed.
 ## Questions We Hope to Answer With the Data:
 
 * Can our model use the training file to predict the percentage chance of the diseases showing in the future based on the symptoms?
-
-* Identify diseases with similar symptoms and how that could impact the accuracy of the prognosis?
 
 
 
