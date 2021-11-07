@@ -81,7 +81,10 @@ This allowed us to compare the accuracy and results of the different machine lea
 ## Dashboard
 We have a fully functioning and interactive dashboard in Tableau.
 Our analysis will be displayed with a story board that provides a clear data visualization.
-There will be charts and graphs that show insightful relationships in our data.
+There are 3 charts that show insightful relationships in our data.
+The first chart displays that a balanced dataset was utilized.
+The other two charts both display the diseases and symptoms. 
+Our interactive chart allows us to select a symptom and easily see based off color how many diseases have it.
 
 
 
