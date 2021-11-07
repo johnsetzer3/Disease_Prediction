@@ -44,6 +44,7 @@ The dataset provided is in a testing and training file.
 The training file is [Training.csv](Resources/Training.csv) and the testing file is [Testing.csv](Resources/Testing.csv).
 The source of the data from the author is not disclosed.
 
+
 ## Database
 The preprocessed train_data, test_data and sympt_df data sets were exported into PostgresSQL as three seperate tables.
 This created a static database in pgAdmin for use during the project.
@@ -68,12 +69,13 @@ The isnull with any functions identified the null values then the drop function 
 A list of symptoms and diseases was created to allow for a GUI where symptoms could be selected from a drop down box.
 Decision Tree, Random Forest, Naive Bayes and logistic regression models are applied to the symptom selections.
 These models assign variables to give disease predictions.
-Along with the disease prediction the model shows the different accruacy scores.
+Along with the disease prediction the project shows the different accruacy scores.
 This allows us to analyze which model is most accruate as well as how the number of symptoms entered impacts the models accuracy.
+
 
 ## Description of the Analysis Phase of the Project:
 Three test patients were run through the model.
-
+This allowed us to compare the accruacy and results of the different machine learning models.
 
 
 ## Dashboard
