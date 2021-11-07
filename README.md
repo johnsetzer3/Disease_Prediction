@@ -31,7 +31,7 @@ This topic uses data that has 132 parameters to help predict 42 different types 
 
 ## Reason Why the Topic Was Selected: 
 Disease impacts all people throughout the world.
-Developing a model where select symptoms can be input to make disease predictions can help diagnosing diseases faster.
+Developing a model where select symptoms can be input to make disease predictions can help make diagnosing diseases faster.
 
 ## Questions We Hope to Answer with the Data:
  * Can our machine learning model be used to predict the correct disease based on symptoms entered?
@@ -44,16 +44,6 @@ The dataset provided is in a testing and training file.
 The training file is [Training.csv](Resources/Training.csv) and the testing file is [Testing.csv](Resources/Testing.csv).
 The source of the data from the author is not disclosed.
 
-
-## Database
-The preprocessed train_data, test_data and sympt_df data sets were exported into PostgresSQL as three seperate tables.
-This created a static database in pgAdmin for use during the project.
-There is a detailed ERD the displays the relationships.
-A join was performed on the tables.
-The database interfaces with [Disease_Prediction_ML.ipynb](Disease_Prediction_ML.ipynb).
-Using from sqlalchemy import create_engine the PostgresSQL data is used in our machine learning model.
-
-
 ## Description of the Data Exploration Phase of the Project:
 The training file [Training.csv](Resources/Training.csv) and the testing file [Testing.csv](Resources/Testing.csv) where imported into Juypter Notebook.
 To begin the preprocessing the two CSV datasets were assigned to the variables: train_data and test_data.  
@@ -65,17 +55,27 @@ For the model to function correctly all data in both data sets has to be in the 
 We also needed to isolate columns with null data and drop that data.
 The isnull with any functions identified the null values then the drop function was used to remove it from the dataframe.
 
+
+## Database
+The preprocessed train_data, test_data and sympt_df data sets were exported into PostgresSQL as three separate tables.
+This created a static database in pgAdmin for use during the project.
+The pdf file [ERD_Disease_Prediction.pdf](ERD_Disease_Prediction.pdf) shows a detailed ERD that displays the relationships.
+A join was performed on the tables.
+The database interfaces with [Disease_Prediction_ML.ipynb](Disease_Prediction_ML.ipynb).
+Using 'from sqlalchemy import create_engine' the PostgresSQL data is used in our machine learning model.
+
+
 ## Machine Learning Model
 A list of symptoms and diseases was created to allow for a GUI where symptoms could be selected from a drop down box.
 Decision Tree, Random Forest, Naive Bayes and logistic regression models are applied to the symptom selections.
 These models assign variables to give disease predictions.
-Along with the disease prediction the project shows the different accruacy scores.
-This allows us to analyze which model is most accruate as well as how the number of symptoms entered impacts the models accuracy.
+Along with the disease prediction the project shows the different accuracy scores.
+This allows us to analyze which model is most accurate as well as how the number of symptoms entered impacts the models accuracy.
 
 
 ## Description of the Analysis Phase of the Project:
 Three test patients were run through the model.
-This allowed us to compare the accruacy and results of the different machine learning models.
+This allowed us to compare the accuracy and results of the different machine learning models.
 
 
 ## Dashboard
