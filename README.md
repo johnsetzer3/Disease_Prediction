@@ -1,4 +1,4 @@
-# Data Analysis Final Project: Disease_Prediction
+# Data Analysis Final Project: Disease Prediction
 
 ## Code Blue Team Members
 * Frank Sullivan
@@ -12,10 +12,10 @@
 Our team will transition roles during the different segments of the project. We have five group members so we will have multiple people within one role.
 
 Square: The square role focuses on the machine learning model. 
-John has been focusing on the data exploration and analysis. 
+John completed the data exploration and analysis. 
 
 Triangle: The member in the triangle role will upscale the project's database. 
-Our datasets are uploaded into PgAdmin as two tables where they were joined with SQL.
+Our datasets are uploaded into PgAdmin.
 The static database will be used throughout the project and maintained by Morgan. 
 
 Circle: The members in the circle role will continue to refine the project analysis and support the presentation with data visualizations.
@@ -45,24 +45,43 @@ The training file is [Training.csv](Resources/Training.csv) and the testing file
 The source of the data from the author is not disclosed.
 
 ## Database
+The preprocessed train_data, test_data and sympt_df data sets were exported into PostgresSQL as three seperate tables.
+This created a static database in pgAdmin for use during the project.
+There is a detailed ERD the displays the relationships.
+A join was performed on the tables.
+The database interfaces with [Disease_Prediction_ML.ipynb](Disease_Prediction_ML.ipynb).
+Using from sqlalchemy import create_engine the PostgresSQL data is used in our machine learning model.
 
 
 ## Description of the Data Exploration Phase of the Project:
+The training file [Training.csv](Resources/Training.csv) and the testing file [Testing.csv](Resources/Testing.csv) where imported into Juypter Notebook.
+To begin the preprocessing the two CSV datasets were assigned to the variables: train_data and test_data.  
+The data preprocessing was completed in [Disease_Prediction_preprocessing.ipynb](Disease_Prediction_preprocessing.ipynb).
 A key part of the data exploration phase is preprocessing the data.
 This allows us to learn about the data characteristics and identify potential problems.
-
-
-## Description of the Analysis Phase of the Project:
-The data types in our data set were evaluated.
-For the model to function correctly all data in both data sets has to be in the correct data type: float64 and int64.
-In addition all columns with null data were removed with the drop code in Python.
+We used the pandas info and describe functions to explore the data
+For the model to function correctly all data in both data sets has to be in the correct data type.
+We also needed to isolate columns with null data and drop that data.
+The isnull with any functions identified the null values then the drop function was used to remove it from the dataframe.
 
 ## Machine Learning Model
+A list of symptoms and diseases was created to allow for a GUI where symptoms could be selected from a drop down box.
+Decision Tree, Random Forest, Naive Bayes and logistic regression models are applied to the symptom selections.
+These models assign variables to give disease predictions.
+Along with the disease prediction the model shows the different accruacy scores.
+This allows us to analyze which model is most accruate as well as how the number of symptoms entered impacts the models accuracy.
+
+## Description of the Analysis Phase of the Project:
+Three test patients were run through the model.
 
 
 
+## Dashboard
+We have a fully functioning and interactive dashboard in Tableau.
+Our analysis will be displayed with a story board that provides a clear data visualization.
+There will be charts and graphs that show insightful relationships in our data.
 
-##
+
 
 
  
