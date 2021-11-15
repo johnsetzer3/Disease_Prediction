@@ -86,7 +86,7 @@ The first chart displays that a balanced dataset was utilized.
 The other two charts both display the diseases and symptoms. 
 Our interactive chart allows us to select a symptom and easily see based off color how many diseases have it.
 
-
+[Link to Tableau Dashboard](https://public.tableau.com/app/profile/jade3140/viz/DiseasePredictionProject/DiseasePredictionData?publish=yes)
 
 
  
