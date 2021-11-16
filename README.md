@@ -59,7 +59,7 @@ The isnull with any functions identified the null values then the drop function 
 ## Database
 The preprocessed train_data, test_data and sympt_df data sets were exported into PostgresSQL as three separate tables.
 This created a static database in pgAdmin for use during the project.
-The pdf file [ERD_Disease_Prediction.pdf](ERD_Disease_Prediction.pdf) shows a detailed ERD that displays the relationships.
+The pdf file [ERD_Disease_Prediction.pdf](./Resources/SQL/ERD_Disease_Prediction.pdf) shows a detailed ERD that displays the relationships.
 A join was performed on the tables.
 The database interfaces with [Disease_Prediction_ML.ipynb](Disease_Prediction_ML.ipynb).
 Using 'from sqlalchemy import create_engine' the PostgresSQL data is used in our machine learning model.
