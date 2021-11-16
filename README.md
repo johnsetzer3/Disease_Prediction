@@ -66,16 +66,24 @@ Using 'from sqlalchemy import create_engine' the PostgresSQL data is used in our
 
 
 ## Machine Learning Model
+The model starts by pulling the training and testing tables from PostgresSQL
 A list of symptoms and diseases was created to allow for a GUI where symptoms could be selected from a drop down box.
 Decision Tree, Random Forest, Naive Bayes and logistic regression models are applied to the symptom selections.
-These models assign variables to give disease predictions.
-Along with the disease prediction the project shows the different accuracy scores.
+Each model used utilizes the same logic but passes it through a different algorithm.
+Each function starts by importing the necessary dependencies and fitting the model to the trained data.
+Each function gathers a list of user imported symptoms and iterates through the data, if that symptom is marked as a 1 in the data set (meaning the symptom is present),
+then it stores the symptom as present and continues through the list of user selected values.
+An inputtest variable is created to test for the symptom's presence in a disease and designates a disease based on the symptoms.
+The inputtest variable is run through an accuracy score test to validate the accuracy of the prediction based on the training data and number of symptoms present.
+The predicted disease populates into the corresponding field in the GUI and prints the accuracy score to the Jupyter notebook.
 This allows us to analyze which model is most accurate as well as how the number of symptoms entered impacts the models accuracy.
 
 
 ## Description of the Analysis Phase of the Project:
 Three test patients were run through the model.
 This allowed us to compare the accuracy and results of the different machine learning models.
+We used the first test patient and used the exact symptoms presented in the training data to determine if the model worked.
+We then added miscellaneous, but related symptoms to test the outcome.
 
 
 ## Dashboard
